@@ -1,3 +1,6 @@
+
+[logo]: https://docs.google.com/uc?export=download&id=0B7bIuWhmnPfQYzlNcVVMRXlIaFU "Logo Title Text 2"
+Attention ![alt text][logo]
 ```diff
 - Use at your own rish
 ```
