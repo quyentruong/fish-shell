@@ -26,6 +26,8 @@ set budspencer_colors 000000 333333 666666 ffffff ffff00 ff6600 ff0000 ff0033 33
 00ff00
 ```
 
+* There are some themes require Powerline fonts. You have to install it. Read [here](https://github.com/powerline/fonts) to see instruction.
+
 * More [information](https://github.com/oh-my-fish/oh-my-fish) about commands of `omf`
 
 
