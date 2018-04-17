@@ -36,7 +36,10 @@ set budspencer_colors 000000 333333 666666 ffffff ffff00 ff6600 ff0000 ff0033 33
 
 * The reason I wrote these functions to make set $PATH in fish-shell more easier and readable. I only wrote set local path instead of global path because local path may overwrite the global path.
 
-### 1. list_user_path
+### Installation
+* Copy all file extension fish to `$HOME/.config/fish/functions/`
+
+### 1. [list_user_path](https://github.com/quyentruong/fish-shell/blob/master/functions/list_user_path.fish)
 
 It will show the path that you defined by set_user_path. <br>
 ```
@@ -50,7 +53,7 @@ For example,
 | 2 | /usr/local/Cellar/sqlite/3.16.2/bin|
 | 3 | /Users/quyentruong/node691/bin     |
 
-### 2. list_path
+### 2. [list_path](https://github.com/quyentruong/fish-shell/blob/master/functions/list_path.fish)
 
 It will show the path that you defined by set_user_path and the path in the system. <br>
 ```
@@ -67,20 +70,20 @@ For example,
 | 5 | /bin                               |
 |...| ...                                |
 
-### 3. set_user_path
+### 3. [set_user_path](https://github.com/quyentruong/fish-shell/blob/master/functions/set_user_path.fish)
 
 Add new path to $fish_user_paths
 ```
 Usage: set_user_path "path1" "path2" "..."
 ```
-### 4. delete_user_path
+### 4. [delete_user_path](https://github.com/quyentruong/fish-shell/blob/master/functions/delete_user_path.fish)
 
 Delete path in $fish_user_paths based on ID get from list_user_path.
 ```
 Usage: delete_user_path 3         // delete path with ID = 3
        delete_user_path (seq 3 5) // delete path with ID = 3, 4, 5
 ```
-### 5. delete_path
+### 5. [delete_path](https://github.com/quyentruong/fish-shell/blob/master/functions/delete_path.fish)
 
 Delete path in $PATH based on ID get from list_path.
 ```
