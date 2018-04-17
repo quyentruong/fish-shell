@@ -8,6 +8,7 @@ Attention ![alt text][logo]
 
 ## I. Theme
 * I used Oh-my-fish to setup themes.
+
 ### Installation
 * Run this command in your terminal
 
