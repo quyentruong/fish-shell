@@ -5,6 +5,21 @@ function set_user_path
   	return 1
   end
   for x in $argv
-    set fish_user_paths $fish_user_paths $x
+    if test -z "$prompt"
+        set prompt "Continue?"
+    end
+
+    while true
+        read -p 'set_color green; echo -n "$prompt [y/N]: "; set_color normal' -l confirm
+
+        switch $confirm
+            case Y y
+                set fish_user_paths $fish_user_paths $x
+                return 0
+            case '' N n
+                return 1
+        end
+    end
+
   end
 end
