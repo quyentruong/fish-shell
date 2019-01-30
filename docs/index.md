@@ -76,19 +76,17 @@ For example,
 
 Add new path to $fish_user_paths
 ```
-Usage: set_user_path "path1" "path2" "..."
+Usage: set_user_path "path"
 ```
 ### 4. [delete_user_path](https://github.com/quyentruong/fish-shell/blob/master/functions/delete_user_path.fish)
 
 Delete path in $fish_user_paths based on ID get from list_user_path.
 ```
 Usage: delete_user_path 3         // delete path with ID = 3
-       delete_user_path (seq 3 5) // delete path with ID = 3, 4, 5
 ```
 ### 5. [delete_path](https://github.com/quyentruong/fish-shell/blob/master/functions/delete_path.fish)
 
 Delete path in $PATH based on ID get from list_path.
 ```
 Usage: delete_path 3         // delete path with ID = 3
-       delete_path (seq 3 5) // delete path with ID = 3, 4, 5
 ```
