@@ -4,7 +4,7 @@ function delete_path
     return 1
   end
 
-  if echo "$argv" | grep -q -E '^[0-9]+$'
+  if echo "$argv" | grep -q -E '^\(seq|^[0-9]+'
     if test -z "$prompt"
         set prompt "Continue?"
     end
@@ -14,7 +14,9 @@ function delete_path
 
         switch $confirm
             case Y y
-                set -e PATH[$argv]
+                for x in $argv
+                  set -e PATH[$x]
+                end
                 return 0
             case '' N n
                 return 1
